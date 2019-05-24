@@ -10,9 +10,9 @@ with open('example.csv') as csvfile:
 
 
     server = smtplib.SMTP_SSL('smtp.gmail.com', 465)
-    server.login('ar053731@gmail.com','@123rawat')
+    server.login('Senders E-mail','password')
     try:
-        server.sendmail('ar053731@gmail.com','rawatakash9690@gmail.com','Subject: {}\n\n This is just a mail<python>'.format("python lib"))
+        server.sendmail('Senders E-mail','recievers E-mail','Subject: {}\n\n Message <python>'.format("Subject"))
     except:
         print("not able to send")
 server.quit()
